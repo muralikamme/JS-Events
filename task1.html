@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+       display:flex;
+      column-gap: 20px;
+       
+     }
+    
+
+
+   img {
+    width: 200px;
+    display: block;
+    
+    border: 2px solid white;
+
+    }
+   .mainimg {
+    border: 0px solid white;
+   
+
+
+    }
+    .mainimg>img{
+        width:auto;
+
+    }
+   .gap {
+    display: flex;
+    flex-direction: column;
+    row-gap:10px;
+
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gap">
+            <img src="https://assets.newatlas.com/dims4/default/f74a29c/2147483647/strip/true/crop/1000x563+0+31/resize/1200x675!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Fkawasaki-h2-supercharged-998cc-h2r.jpg" class="a1" >
+            <img src="https://ic1.maxabout.us/news/2016/10/bg_17ZX1000Y_201GY3SRF00D_C.jpg" class="a2">
+            <img src="https://content2.kawasaki.com/ContentStorage/KMC/ProductTopFeature/1150/30ebdc9a-6d25-4036-9c76-02bd06be6750.jpg?w=800"  class="a3">
+            <img src="https://105tharmoury.com.au/cdn/shop/products/86b89a36415733eea9fa4f126b5f4b3314e660db_1024x1024.jpg?v=1572951622" class="a4">
+            <img src="https://ic.maxabout.us//misc/infographics//kawasaki-ninja-h2-price-india.jpg/thumb/1100"  class="a5">
+      
+      
+       </div>
+       <div class="mainimg">
+        <img src="https://stat.overdrive.in/wp-content/odgallery/2018/05/42126_Kawasaki-Ninja-H2R_001.jpg" class="image" style="width: 900px;" >
+       </div>
+    </div>
+
+
+    <script>
+     var merege1=document.getElementsByClassName("a1")
+     var merege2=document.getElementsByClassName("a2")
+     var merege3=document.getElementsByClassName("a3")
+     var merege4=document.getElementsByClassName("a4")
+     var merege5=document.getElementsByClassName("a5")
+     
+     
+       merege1[0].addEventListener("mouseover",function (){
+
+         var newimg =document.getElementsByClassName("image") 
+          newimg[0].setAttribute("src","https://assets.newatlas.com/dims4/default/f74a29c/2147483647/strip/true/crop/1000x563+0+31/resize/1200x675!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Fkawasaki-h2-supercharged-998cc-h2r.jpg")
+       })
+
+
+
+       merege2[0].addEventListener("mouseover",function(){
+
+         var newimg =document.getElementsByClassName("image") 
+         newimg[0].setAttribute("src","https://ic1.maxabout.us/news/2016/10/bg_17ZX1000Y_201GY3SRF00D_C.jpg")
+       })
+
+      
+       merege3[0].addEventListener("mouseover",function(){
+
+    var newimg =document.getElementsByClassName("image") 
+     newimg[0].setAttribute("src","https://content2.kawasaki.com/ContentStorage/KMC/ProductTopFeature/1150/30ebdc9a-6d25-4036-9c76-02bd06be6750.jpg?w=800" )
+      })
+
+            merege4[0].addEventListener("mouseover",function (){
+
+       var newimg =document.getElementsByClassName("image") 
+            newimg[0].setAttribute("src","https://105tharmoury.com.au/cdn/shop/products/86b89a36415733eea9fa4f126b5f4b3314e660db_1024x1024.jpg?v=1572951622")
+  })
+
+
+
+  merege5[0].addEventListener("mouseover",function (){
+
+var newimg=document.getElementsByClassName("image") 
+     newimg[0].setAttribute("src","https://ic.maxabout.us//misc/infographics//kawasaki-ninja-h2-price-india.jpg/thumb/1100")
+})
+
+
+
+   
+
+
+
+    
+
+
+
+          
+
+
+    </script>
+</body>
+</html>
